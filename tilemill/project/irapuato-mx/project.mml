@@ -1,0 +1,127 @@
+{
+  "bounds": [
+    -101.4581,
+    20.5844,
+    -101.2212,
+    20.7656
+  ],
+  "center": [
+    -101.3461,
+    20.6779,
+    12
+  ],
+  "format": "png",
+  "interactivity": {
+    "layer": "irapuatopoints",
+    "template_teaser": "{{{name}}}",
+    "fields": [
+      "name"
+    ]
+  },
+  "minzoom": 0,
+  "maxzoom": 12,
+  "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+  "Stylesheet": [
+    "style.mss",
+    "roads.mss"
+  ],
+  "Layer": [
+    {
+      "id": "countries",
+      "name": "countries",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "geometry": "polygon",
+      "Datasource": {
+        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/cultural/10m-admin-0-countries.zip",
+        "type": "shape"
+      }
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -101.42868059999999,
+        20.63388979999998,
+        -101.297035,
+        20.73125239999999
+      ],
+      "id": "irapuatopolygons",
+      "class": "",
+      "Datasource": {
+        "file": "data/irapuato-polygons.shp",
+        "id": "irapuatopolygons",
+        "project": "irapuato-mx",
+        "srs": ""
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "irapuatopolygons"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        -102.0135409,
+        20.36094719999999,
+        -101.0056204,
+        21.20157539999999
+      ],
+      "id": "roads",
+      "class": "",
+      "Datasource": {
+        "file": "data/irapuato-lines.shp",
+        "id": "roads",
+        "project": "irapuato-mx",
+        "srs": ""
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "roads"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        -101.38553219999999,
+        20.651002299999973,
+        -101.2983078,
+        20.707891899999986
+      ],
+      "id": "irapuatopoints",
+      "class": "",
+      "Datasource": {
+        "file": "data/irapuato-points.shp",
+        "id": "irapuatopoints",
+        "project": "irapuato-mx",
+        "srs": ""
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "irapuatopoints"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        -102.0135409,
+        20.36094719999999,
+        -101.0056204,
+        21.20157539999999
+      ],
+      "id": "road-labels",
+      "class": "",
+      "Datasource": {
+        "file": "data/irapuato-lines.shp"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "road-labels"
+    }
+  ],
+  "scale": 1,
+  "metatile": 2,
+  "name": "",
+  "description": "",
+  "legend": "",
+  "attribution": ""
+}
